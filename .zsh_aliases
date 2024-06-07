@@ -1,0 +1,9 @@
+alias zshconfig="nvim ~/.zshrc"
+alias ohmyzsh="nvim ~/.oh-my-zsh"
+alias ls='eza --group-directories-first'
+alias cls='clear'
+alias grep='grep --color=auto'
+alias vi='vim'
+alias l='eza --group-directories-first'
+alias ll='eza -alh --group-directories-first'
+alias tree='eza --tree --group-directories-first'
