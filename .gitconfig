@@ -1,0 +1,10 @@
+[user]
+    email = hugo@perdomo.dev
+    name = Hugo Perdomo
+[core]
+    editor = nvim
+[alias]
+    fomo = !git fetch origin main && git rebase origin/main
+    lg = !git --no-pager log --pretty=format:\"- %h: %s\"
+[init]
+    defaultBranch = main
