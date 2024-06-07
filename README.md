@@ -11,6 +11,12 @@
 sudo pacman -S stow
 ```
 
+## Tiling Manager
+- [i3](https://i3wm.org/downloads/) & `i3status`
+- `dmenu`
+- `xorg` & `xorg-init`
+- `feh`
+
 # Custom Scripts Folder
 
 I like to have a custom folder in my home directory which contains scripts I use regularly.
