@@ -17,6 +17,23 @@ sudo pacman -S stow
 - `xorg` & `xorg-init`
 - `feh`
 
+## TMUX
+
+Install the dependencies
+
+```shell
+sudo pacman -S tmux
+```
+
+You will also need the [TMUX package manager](https://github.com/tmux-plugins/tpm) TPM for short
+
+```shell
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+You can start a tmux session now and don't forget to install the tmux packages listed in the configuration file by
+pressing <kbd>prefix</kbd> + <kbd>I</kbd> once in tmux.
+
 # Custom Scripts Folder
 
 I like to have a custom folder in my home directory which contains scripts I use regularly.
