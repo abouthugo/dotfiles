@@ -6,7 +6,11 @@
 - [eza](https://github.com/eza-community/eza?tab=readme-ov-file)
 - [zoxide](https://github.com/ajeetdsouza/zoxide)
 - [starship](https://starship.rs/guide/#%F0%9F%9A%80-installation)
+- [yay](https://github.com/Jguer/yay)
+  - `zathura zathura-djvu zathura-pdf-poppler`
 - [Gnu Stow](https://www.gnu.org/software/stow/)
+
+Before anything make sure GNU Stow is installed
 ```shell
 sudo pacman -S stow
 ```
