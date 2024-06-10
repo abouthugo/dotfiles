@@ -1,0 +1,51 @@
+import = [ "~/.config/alacritty/themes/tokyonight_night.toml", ]
+live_config_reload = true
+
+[env]
+TERM = "xterm-256color"
+
+[cursor]
+unfocused_hollow = false
+
+[cursor.style]
+blinking = "On"
+shape = "Block"
+
+[window]
+decorations = "Full"
+dynamic_padding = false
+
+[window.dimensions]
+columns = 84
+lines = 22
+
+[window.padding]
+x = 0
+y = 0
+
+[window.class]
+instance = "Alacritty"
+general = "Alacritty"
+
+[shell]
+program = "/usr/bin/zsh"
+
+[font]
+size = 14.0
+
+[font.bold]
+family = "JetBrainsMono Nerd Font Propo"
+style = "Bold"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font Propo"
+style = "Bold Italic"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font Propo"
+style = "Medium Italic"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font Propo"
+style = "Medium"
+
