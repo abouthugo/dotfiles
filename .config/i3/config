@@ -216,4 +216,4 @@ bar {
 exec_always feh --bg-fill /home/hue/pictures/linux_upscayl_4x_realesrgan-x4plus-anime.png
 
 # Window Compositor
-exec_always picom -f
+exec_always picom --config $XDG_CONFIG_HOME/picom/picom.conf
