@@ -1,6 +1,6 @@
 Before anything make sure GNU Stow is installed along with `eza`, `zoxide` and `i3`
 ```shell
-sudo pacman -S stow eza zoxide i3
+sudo pacman -S stow eza zoxide i3 ripgrep
 ```
 
 # Dependencies
