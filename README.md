@@ -1,5 +1,12 @@
+Before anything make sure GNU Stow is installed along with `eza`, `zoxide` and `i3`
+```shell
+sudo pacman -S stow eza zoxide i3
+```
+
 # Dependencies
 
+- [JetBrainsMono Nerd Font](https://www.nerdfonts.com/font-downloads)
+  - Download the font and the move the files to `~/.local/share/fonts/` then run `fc-cache`
 - [neovim](https://github.com/neovim/neovim/blob/master/BUILD.md#build-prerequisites)
 - [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
 - [fnm](https://github.com/Schniz/fnm)
@@ -10,14 +17,10 @@
   - `zathura zathura-djvu zathura-pdf-poppler`
 - [Gnu Stow](https://www.gnu.org/software/stow/)
 
-Before anything make sure GNU Stow is installed
-```shell
-sudo pacman -S stow
-```
-
 ## Tiling Manager
 - [i3](https://i3wm.org/downloads/) & `i3status`
-- `dmenu`
+- `dmenu` - I like the patches from [suckless.org](https://tools.suckless.org/dmenu/)
+  - see [this YouTube video](https://youtu.be/bBJ0qxqzlxk) in case you get stuck
 - `xorg` & `xorg-init`
 - `feh`
 
