@@ -1,6 +1,6 @@
 Before anything make sure GNU Stow is installed along with `eza`, `zoxide` and `i3`
 ```shell
-sudo pacman -S stow eza zoxide i3 ripgrep
+sudo pacman -S stow eza zoxide i3 i3lock xss-lock xset flameshot ripgrep
 ```
 
 # Dependencies
@@ -19,7 +19,7 @@ sudo pacman -S stow eza zoxide i3 ripgrep
 
 ## Tiling Manager
 - [i3](https://i3wm.org/downloads/) & `i3status`
-- `dmenu` - I like the patches from [suckless.org](https://tools.suckless.org/dmenu/)
+- `dmenu` - I patched [my own version](https://github.com/abouthugo/dmenu)
   - see [this YouTube video](https://youtu.be/bBJ0qxqzlxk) in case you get stuck
 - `xorg` & `xorg-init`
 - `feh`
