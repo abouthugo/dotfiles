@@ -29,8 +29,8 @@ exec --no-startup-id dex --autostart --environment i3
 # exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --color 1a1b26
 
-# Sleep after 2 minutes
-exec_always --no-startup-id xset dpms 0 0 120
+# Sleep after 5 minutes
+exec_always --no-startup-id xset dpms 0 0 300
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -218,5 +218,6 @@ bar {
 # Display Wallpaper
 exec_always feh --bg-fill /home/hue/pictures/linux_upscayl_4x_realesrgan-x4plus-anime.png
 
+for_window [class="^.*"] border pixel 1
 # Window Compositor
-exec_always picom --config $XDG_CONFIG_HOME/picom/picom.conf
+# exec_always picom --config $XDG_CONFIG_HOME/picom/picom.conf
