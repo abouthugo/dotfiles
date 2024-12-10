@@ -1,5 +1,8 @@
+# npm global package setup
+NPM_PACKAGES="${HOME}/.npm-packages"
+
 # adds custom scripts to the path
-export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:$HOME/bin:$NPM_PACKAGES/bin"
 
 # Zsh config
 export ZSH="$HOME/.oh-my-zsh"
@@ -10,7 +13,7 @@ HISTSIZE=1000
 SAVEHIST=1000
 
 # custom env vars
-export $(envsubst < "$HOME/.env")
+# export $(envsubst < "$HOME/.env")
 source $HOME/.zsh_env_vars
 
 # Custom aliases
@@ -31,3 +34,8 @@ source $HOME/.zsh_zoxide_config
 # Starship
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 eval "$(starship init zsh)"
+
+# Hyprland config
+if uwsm check may-start; then
+    exec uwsm start hyprland.desktop
+fi
