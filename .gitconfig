@@ -8,3 +8,7 @@
     lg = !git --no-pager log --pretty=format:\"- %h: %s\"
 [init]
     defaultBranch = main
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
