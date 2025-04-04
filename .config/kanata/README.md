@@ -1,3 +1,38 @@
+# Installation and Setup
+
+Install with cargo:
+
+```shell
+cargo install kanata
+```
+
+For setup you will need to add a new user:
+
+```shell
+sudo groupadd uinput
+```
+
+And add yourself to it as well:
+
+```shell
+sudo usermod -aG input $USER
+sudo usermod -aG uinput $USER
+```
+
+Log out and log back in
+
+Create the file `/lib/udev/rules.d/100-kanata.rules` and add the following:
+
+```
+KERNEL=="uinput", MODE="0660", GROUP="uinput", OPTIONS+="static_node=uinput"
+```
+
+You might need to run this after running kanata to verify:
+
+```shell
+sudo modprobe uinput
+```
+
 # Mapping Keys the right way
 
 a | ; -> SUPER
@@ -25,6 +60,7 @@ WantedBy=default.target
 ```
 
 Then run:
+
 ```
 systemctl --user daemon-reload
 systemctl --user enable kanata.service
