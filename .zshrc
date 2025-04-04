@@ -31,3 +31,16 @@ source $HOME/.zsh_zoxide_config
 # Starship
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 eval "$(starship init zsh)"
+
+gcloud_sdk_dir="$HOME/Downloads/gsutil-raw/google-cloud-sdk"
+gcloud_sdk_path="$gcloud_sdk_dir/path.zsh.inc"
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f $gcloud_sdk_path ]; then
+  . $gcloud_sdk_path;
+fi
+
+gcloud_completion_config="$gcloud_sdk_dir/completion.zsh.inc"
+# The next line enables shell command completion for gcloud.
+if [ -f $gcloud_completion_config ]; then
+  . $gcloud_completion_config;
+fi
