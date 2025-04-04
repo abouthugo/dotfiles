@@ -1,5 +1,5 @@
 # adds custom scripts to the path
-export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:$HOME/bin:$HOME/.cargo/bin"
 
 # Zsh config
 export ZSH="$HOME/.oh-my-zsh"
@@ -44,3 +44,6 @@ gcloud_completion_config="$gcloud_sdk_dir/completion.zsh.inc"
 if [ -f $gcloud_completion_config ]; then
   . $gcloud_completion_config;
 fi
+
+# Cargo stuff
+. "$HOME/.cargo/env"
