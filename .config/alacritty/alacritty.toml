@@ -1,5 +1,3 @@
-import = [ "~/.config/alacritty/themes/github-dark-high-contrast.toml", ]
-live_config_reload = true
 
 [env]
 TERM = "xterm-256color"
@@ -27,7 +25,7 @@ y = 0
 instance = "Alacritty"
 general = "Alacritty"
 
-[shell]
+[terminal.shell]
 program = "/usr/bin/zsh"
 
 [font]
@@ -48,4 +46,10 @@ style = "Medium Italic"
 [font.normal]
 family = "JetBrainsMono Nerd Font Propo"
 style = "Medium"
+
+[general]
+live_config_reload = true
+import = [ "~/.config/alacritty/themes/github-dark-high-contrast.toml", ]
+
+[terminal]
 
