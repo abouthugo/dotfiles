@@ -1,0 +1,15 @@
+[
+  {
+    "layer": "top", // Waybar on highest layer so tooltips go over windows
+    "output": "eDP-1", // Set output to primary monitor
+    "height": 40, // Set height to avoid jumping due to active workspace indicator
+    "margin-left": 4,
+    "margin-right": 4,
+    "margin-top": 4,
+    "modules-right": ["battery", "clock#date", "clock#time"], // Sets modules for the left of the bar
+    "modules-center": ["hyprland/workspaces"], // Set modules for the center of the bar
+    "modules-left": ["tray", "temperature", "cpu", "memory", "wireplumber"], // Set modules for the right of the bar
+
+    "include": ["$XDG_CONFIG_HOME/waybar/modules.jsonc"], // Include the module config
+  },
+]
