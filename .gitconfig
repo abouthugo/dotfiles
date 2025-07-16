@@ -1,14 +1,16 @@
 [user]
-    email = hugo@perdomo.dev
-    name = Hugo Perdomo
+  email = hugo@perdomo.dev
+  name = Hugo Perdomo
 [core]
-    editor = nvim
+  editor = nvim
 [alias]
-    fomo = !git fetch origin main && git rebase origin/main --autostash
-    lg = !git --no-pager log --pretty=format:\"- %h: %s\"
+  fomo = !git fetch origin main && git rebase origin/main --autostash
+  lg = !git --no-pager log --pretty=format:\"- %h: %s\"
 [init]
-    defaultBranch = main
+  defaultBranch = main
 [commit]
-	gpgsign = true
+  gpgsign = true
 [tag]
-	gpgSign = true
+  gpgSign = true
+[fetch]
+  prune = true
