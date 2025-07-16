@@ -1,4 +1,5 @@
 Before anything make sure GNU Stow is installed along with `eza`, `zoxide` and `i3`
+
 ```shell
 sudo pacman -S stow eza zoxide i3 i3lock xss-lock xset flameshot ripgrep
 ```
@@ -16,13 +17,18 @@ sudo pacman -S stow eza zoxide i3 i3lock xss-lock xset flameshot ripgrep
 - [yay](https://github.com/Jguer/yay)
   - `zathura zathura-djvu zathura-pdf-poppler`
 - [Gnu Stow](https://www.gnu.org/software/stow/)
+- [kanata](https://github.com/jtroo/kanata) also see the guide to [avoid using sudo on linux](https://github.com/jtroo/kanata/wiki/Avoid-using-sudo-on-Linux)
+- [wl-copy](https://man.archlinux.org/man/wl-clipboard.1.en)
+- ttf-joypixels
+- hyprland
+- uwsm & libnewt
+- dunst
 
 ## Tiling Manager
-- [i3](https://i3wm.org/downloads/) & `i3status`
+
+- [hyprland](https://wiki.hyprland.org/)
 - `dmenu` - I patched [my own version](https://github.com/abouthugo/dmenu)
   - see [this YouTube video](https://youtu.be/bBJ0qxqzlxk) in case you get stuck
-- `xorg` & `xorg-init`
-- `feh`
 
 ## TMUX
 
