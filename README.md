@@ -12,6 +12,7 @@ sudo pacman -S stow eza zoxide i3 i3lock xss-lock xset flameshot ripgrep
   - Download the font and the move the files to `~/.local/share/fonts/` then run `fc-cache`
 - [neovim](https://github.com/neovim/neovim/blob/master/BUILD.md#build-prerequisites)
 - [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
+  - Syntax highlighting plugin: [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
 - [fnm](https://github.com/Schniz/fnm)
 - [eza](https://github.com/eza-community/eza?tab=readme-ov-file)
 - [zoxide](https://github.com/ajeetdsouza/zoxide)
