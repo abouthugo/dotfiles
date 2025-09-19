@@ -7,8 +7,10 @@
     fomo = !git fetch origin main && git rebase origin/main --autostash
     lg = !git --no-pager log --pretty=format:\"- %h: %s\"
 [init]
-    defaultBranch = main
+	defaultBranch = main
 [commit]
 	gpgsign = true
 [tag]
 	gpgSign = true
+[fetch]
+	prune = true
