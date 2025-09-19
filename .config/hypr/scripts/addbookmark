@@ -1,0 +1,6 @@
+#!/bin/sh
+
+_BOOKMARK="$(wl-paste --primary)"
+_SNIPPETS=~/.local/share/snippets
+
+echo $_BOOKMARK >>$_SNIPPETS
